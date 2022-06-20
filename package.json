@@ -1,0 +1,24 @@
+{
+	"author": "Drango",
+	"description": "A way to easily create tag functions.",
+	"license": "MIT",
+	"main": "dist/index.js",
+	"name": "tag-functions",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/el-durango/tag-functions.git"
+	},
+	"scripts": {
+		"build": "tsc",
+		"format": "prettier --write \"**/*.+(js|ts|json)\"",
+		"lint": "eslint src --ext .ts",
+		"lint:fix": "eslint src --ext .ts --fix",
+		"prebuild": "npx rimraf dist",
+		"prebuildCmds": "npm run build",
+		"preclearCmds": "npm run build",
+		"prestart": "npm run build",
+		"start": "node ."
+	},
+	"type": "module",
+	"version": "1.0.0"
+}
