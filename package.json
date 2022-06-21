@@ -10,7 +10,8 @@
 	},
 	"exports": "./dist/index",
 	"files": [
-		"dist/"
+		"dist/",
+		"src/"
 	],
 	"license": "MIT",
 	"main": "./dist/index",
@@ -29,6 +30,6 @@
 		"publish": "npm publish"
 	},
 	"type": "module",
-	"types": "./typings/index",
-	"version": "1.0.4"
+	"types": "./dist/index",
+	"version": "1.0.5"
 }
