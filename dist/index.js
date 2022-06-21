@@ -1,4 +1,4 @@
-export function createTag(fn) {
+export default function createTag(fn) {
     function tagFn(string, ...keys) {
         const stringArr = typeof string === "string" ? [string] : string;
         const joinedArr = stringArr.map((str, i) => `${str}${keys[i] ?? ""}`);
