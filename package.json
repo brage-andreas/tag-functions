@@ -30,6 +30,6 @@
 		"publish": "npm publish"
 	},
 	"type": "module",
-	"types": "./dist/index",
-	"version": "1.0.5"
+	"types": "./src/index",
+	"version": "1.0.6"
 }
