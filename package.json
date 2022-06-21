@@ -29,5 +29,6 @@
 		"publish": "npm publish"
 	},
 	"type": "module",
+	"types": "./typings/index.js",
 	"version": "1.0.1"
 }
