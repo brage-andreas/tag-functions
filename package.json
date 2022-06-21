@@ -3,7 +3,7 @@
 	"description": "A way to easily create tag functions.",
 	"license": "MIT",
 	"main": "dist/index.js",
-	"name": "tag-functions",
+	"name": "@drango/tag-functions",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/el-durango/tag-functions.git"
