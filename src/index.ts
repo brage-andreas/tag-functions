@@ -11,12 +11,12 @@ export default function createTag<T>(fn: (string: string) => T): {
 		string: ReadonlyArray<string> | string,
 		...keys: ReadonlyArray<unknown>
 	): T {
-		const stringArray = typeof string === "string" ? [string] : string;
-		const joinedStringArray = stringArray.map(
+		const baseArray = typeof string === "string" ? [string] : string;
+		const joinableArray = baseArray.map(
 			(str, i) => `${str}${keys[i] ?? ""}`
 		);
 
-		return fn(joinedStringArray.join(""));
+		return fn(joinableArray.join(""));
 	}
 
 	return tagFn;
